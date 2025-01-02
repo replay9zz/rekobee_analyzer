@@ -4,19 +4,34 @@ A data analysis and visualization tool for Rekobee that enables customer data an
 
 ## Usage 
 
-usage: analyze.py [-h] [-c CAPTURE] [-s SECRET] [-o OUTPUT] [-i INDEX] [-v] [--signature HEX]
+```bash
+python3 analyze.py [-h] [-c CAPTURE] [-s SECRET] [-o OUTPUT] [-i INDEX] [-v] [--signature HEX]
+```
 
-### Example
-analyze.py -c capture.pcap -s S3cr3tP@ss -o output.txt -vv
+### -c CAPTURE
+
+### -s SECRET
+
+### -o OUTPUT
+
+### -i INDEX
+
+### -v -vv VERBOSE
+
+### --signature 
+
+## Example
+```bash
+python3 analyze.py -c capture.pcap -s S3cr3tP@ss -o output.txt -vv
+```
 
 ## Test Environment
 
 | OS | Version | Status |
 |----|---------|---------|
-| macOS (Apple M2) | Sonoma 14.2.1 | ✅ Tested & Working |
-| Windows | 11 Pro 22H2 | 🚧 Not Tested |
+| macOS (Apple M2) | Sequoia 15.2 | ✅ Tested & Working |
+| Windows | 11 Home 24H2 | 🚧 Not Tested |
 | Kali Linux | 2023.4 | 🚧 Not Tested |
-
 
 ## Setup
 
