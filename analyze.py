@@ -47,6 +47,14 @@ def get_args():
         type = str
     )
     parser.add_argument(
+        "-o",
+        default = "output.txt",
+        dest = "output",
+        help = "output file path (default: output.txt)",
+        metavar = "OUTPUT",
+        type = str
+    )
+    parser.add_argument(
         "-i",
         default = None,
         dest = "initial",
@@ -60,14 +68,6 @@ def get_args():
         default = 0,
         dest = "verbose",
         help = "everything in detail",
-    )
-    parser.add_argument(
-        "-o",
-        default = "output.txt",
-        dest = "output",
-        help = "output file path (default: output.txt)",
-        metavar = "OUTPUT",
-        type = str
     )
     parser.add_argument(
         "--signature",
