@@ -9,7 +9,7 @@ python3 analyze.py [-h] [-c CAPTURE] [-s SECRET] [-o OUTPUT] [-i INDEX] [-v] [--
 ```
 
 ### -c CAPTURE
-This is a wireshark `pcap` capture file.
+This is a wireshark `pcap` capture file or more modern that tshark supports.
 
 ### -s SECRET
 This operator uses for password.
@@ -37,7 +37,7 @@ python3 analyze.py -c capture.pcap -s S3cr3tP@ss -o output.txt -vv
 |----|---------|---------|
 | macOS (Apple M2) | Sequoia 15.2 | ✅ Tested & Working |
 | Windows | 11 Home 24H2 | 🚧 Not Tested |
-| Kali Linux | 2023.4 | 🚧 Not Tested |
+| Kali Linux | 2024.4 | ✅ Tested & Working |
 
 ## Setup
 
@@ -47,7 +47,7 @@ git clone https://github.com/replay9zz/rekobee_analyzer.git
 cd rekobee_analyzer
 ```
 
-2. Create and activate virtual environment
+2. Create and activate virtual environment (Required)
 ```bash
 python -m venv .venv
 source .venv/bin/activate

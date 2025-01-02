@@ -4,6 +4,7 @@ from core.encryption import *
 from core.exceptions import *
 from core.models import *
 from core.utils import *
+from core.utils.printing import _print_output
 
 
 def read_initializations(context, verbose: int = 0):
@@ -35,6 +36,6 @@ def reverse_shell(context, verbose: int = 0, **kwargs) -> None:
         except:
             raise
     newline = "← "
-    print(colored(newline + cin.replace("\r", f"\n{newline}"), "dark_grey"))
+    _print_output(colored(newline + cin.replace("\r", f"\n{newline}"), "dark_grey"))
     newline = "→ "
-    print(newline + cout.replace("\n", f"\n{newline}"))
+    _print_output(newline + cout.replace("\n", f"\n{newline}"))

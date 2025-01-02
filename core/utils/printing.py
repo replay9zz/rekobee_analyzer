@@ -14,11 +14,15 @@ except ImportError:
 
 from .encoding import *
 
+import sys
+if sys.platform == 'win32':
+    sys.stdout.reconfigure(encoding='utf-8')
+
 _output_file = None
 
 def set_output_file(filepath):
     global _output_file
-    _output_file = open(filepath, 'w') if filepath else None
+    _output_file = open(filepath, 'w', encoding='utf-8') if filepath else None
 
 def close_output_file():
     global _output_file
