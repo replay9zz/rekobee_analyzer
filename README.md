@@ -36,7 +36,7 @@ python3 analyze.py -c capture.pcap -s S3cr3tP@ss -o output.txt -vv
 | OS | Version | Status |
 |----|---------|---------|
 | macOS (Apple M2) | Sequoia 15.2 | ✅ Tested & Working |
-| Windows | 11 Home 24H2 | 🚧 Not Tested |
+| Windows | 11 Home 24H2 | ✅ Tested & Working |
 | Kali Linux | 2024.4 | ✅ Tested & Working |
 
 ## Setup
@@ -59,4 +59,5 @@ pip install -r requirements.txt
 ```
 
 4. Change tshark and dumpcap path (Required)
+
 
