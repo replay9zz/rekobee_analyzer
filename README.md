@@ -9,16 +9,22 @@ python3 analyze.py [-h] [-c CAPTURE] [-s SECRET] [-o OUTPUT] [-i INDEX] [-v] [--
 ```
 
 ### -c CAPTURE
+This is a wireshark `pcap` capture file.
 
 ### -s SECRET
+This operator uses for password.
 
 ### -o OUTPUT
+You can save the output to a file.
 
 ### -i INDEX
+The index of a initial ic2kp packet, 40 bytes in size.
 
 ### -v -vv VERBOSE
+You can verbose the output.
 
 ### --signature 
+The magic signature that the client and server used during CHAP.
 
 ## Example
 ```bash
@@ -51,4 +57,6 @@ source .venv/bin/activate
 ```bash
 pip install -r requirements.txt
 ```
- 
+
+4. Change tshark and dumpcap path (Required)
+
