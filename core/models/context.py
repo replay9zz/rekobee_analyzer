@@ -26,7 +26,7 @@ class Context:
     def __post_init__(self):
         self._decrypted = list()
         self._last_sender = None
-
+    
     def __del__(self):
         try:
             self.capture.close()
@@ -35,6 +35,30 @@ class Context:
             warning("Failed to gracefully close capture.")
             if self.verbose != 0:
                 raise
+    
+    
+    # Disable warnings about PyShark cleanup.
+    
+    # def __del__(self):
+    #     try:
+    #         if hasattr(self, 'capture') and self.capture:
+    #             try:
+    #                 # Simply kill processes if they exist
+    #                 if hasattr(self.capture, '_running_processes'):
+    #                     for proc in self.capture._running_processes:
+    #                         try:
+    #                             proc.kill()
+    #                         except:
+    #                             pass
+    #                 # Disable PyShark cleanup to avoid warnings
+    #                 self.capture._running_processes = []
+    #                 self.capture.close = lambda: None
+    #                 self.capture.close_async = lambda: None
+    #             except:
+    #                 pass
+    #     except:
+    #         pass  # Suppress all cleanup warnings
+
 
     @property
     def tcp_packet(self):
