@@ -1,6 +1,6 @@
 # Rekobee Analyzer
 
-A data analysis and visualization tool for Rekobee that enables customer data analysis and trend identification.
+A Python-based tool for analyzing network packet captures.
 
 ## Usage 
 
@@ -60,4 +60,5 @@ pip install -r requirements.txt
 
 4. Change tshark and dumpcap path (Required)
 
-
+## Acknowledgments
+Original repository: [havokzero/rekobee_analyzer](https://github.com/havokzero/rekobee_analyzer)
