@@ -14,7 +14,7 @@ verbose levels:
 1) -v: extra information;
 2) -vv: packets and advances.
 
-example: analyze.py -c capture.pcap -s S3cr3tP@ss -vv
+example: analyze.py -c capture.pcap -s S3cr3tP@ss -o output.txt -vv
 """
 
 import argparse
