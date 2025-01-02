@@ -2,12 +2,12 @@
 
 A data analysis and visualization tool for Rekobee that enables customer data analysis and trend identification.
 
-## Features
+## Usage 
 
-- Data preprocessing and formatting
-- Basic statistical analysis
-- Data visualization
-- Report generation
+usage: analyze.py [-h] [-c CAPTURE] [-s SECRET] [-o OUTPUT] [-i INDEX] [-v] [--signature HEX]
+
+### Example
+analyze.py -c capture.pcap -s S3cr3tP@ss -o output.txt -vv
 
 ## Test Environment
 
