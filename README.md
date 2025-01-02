@@ -33,11 +33,11 @@ python3 analyze.py -c capture.pcap -s S3cr3tP@ss -o output.txt -vv
 
 ## Test Environment
 
-| OS | Version | Status |
-|----|---------|---------|
-| macOS (Apple M2) | Sequoia 15.2 | ✅ Tested & Working |
-| Windows | 11 Home 24H2 | ✅ Tested & Working |
-| Kali Linux | 2024.4 | ✅ Tested & Working |
+| OS | Version | Python | Status |
+|----|---------|--------|---------|
+| macOS (Apple M2) | Sequoia 15.2 | 3.13.1 | ✅ Tested & Working |
+| Windows | 11 Home 24H2 | 3.11.4 | ✅ Tested & Working | 
+| Kali Linux | 2024.4 | 3.11.9 | ✅ Tested & Working |
 
 ## Setup
 
